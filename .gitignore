@@ -1,0 +1,18 @@
+# Entorno
+llamaenv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Datos generados / grandes
+data_processed/
+data_raw/
+models/
+*.parquet
+*.pt
+*.npy
+*.png
+
+# HuggingFace / caches
+.cache/
