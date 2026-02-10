@@ -76,6 +76,14 @@ def main():
     print("Cargando dataset...")
     X_train, Y_train, X_val, Y_val = load_data()
 
+    print("X_train shape:", X_train.shape)
+    print("Y_train shape:", Y_train.shape)
+    print("Número de ejemplos de entrenamiento:", X_train.shape[0])
+
+    print("X_val shape:", X_val.shape)
+    print("Y_val shape:", Y_val.shape)
+    print("Número de ejemplos de validación:", X_val.shape[0])
+
     print("Cargando modelo LLaMA base desde:", LLAMA_PATH)
     base_model = AutoModel.from_pretrained(
         LLAMA_PATH,
